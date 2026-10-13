@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="canonical" href="https://bookedcleaners.com/">
+<title>Marketing para empresas de limpieza en EEUU | BookedCleaners</title>
+<meta name="description" content="Le ayudamos a conseguir más clientes desde Google: perfil de Google Maps, página web y reseñas. Atención en español, 100% remota.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: una página de venta en franjas alternas (hueso / blanco / marino), columna de 1120px; la "agenda llena" es el motivo visual. */
+:root{
+  --navy:#1F3A5F; --navy-deep:#162B47; --teal:#2BB3A3; --teal-ink:#1A7F73; --teal-soft:#E3F4F1;
+  --bg:#F6F8F7; --surface:#FFFFFF; --fg:#1B2733; --heading:#1F3A5F; --muted:#4A5966; --line:#DCE3E1;
+  --btn-bg:#1F3A5F; --btn-fg:#FFFFFF; --btn2-bg:#E3F4F1; --btn2-fg:#1A5A52;
+  --band:#1F3A5F; --band-fg:#EEF3F7; --band-muted:#C3D1DE; --chip:#2BB3A3; --chip-fg:#0E2A26;
+  --shadow:0 18px 40px -22px rgba(31,58,95,.35);
+  --font-display:"Sora", "Segoe UI", system-ui, sans-serif;
+  --font-body:"Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --wrap:1120px;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --teal:#5FD3C5; --teal-ink:#7EE0D4; --teal-soft:#173B3D;
+    --bg:#0F1B29; --surface:#162637; --fg:#E6ECF1; --heading:#F1F5F8; --muted:#A8B6C3; --line:#28394C;
+    --btn-bg:#5FD3C5; --btn-fg:#0E2A26; --btn2-bg:#1D3447; --btn2-fg:#CFF3EE;
+    --band:#13263B; --band-fg:#EEF3F7; --band-muted:#B3C2D0; --chip:#5FD3C5; --chip-fg:#0E2A26;
+    --shadow:0 18px 40px -22px rgba(0,0,0,.6); color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --teal:#5FD3C5; --teal-ink:#7EE0D4; --teal-soft:#173B3D;
+  --bg:#0F1B29; --surface:#162637; --fg:#E6ECF1; --heading:#F1F5F8; --muted:#A8B6C3; --line:#28394C;
+  --btn-bg:#5FD3C5; --btn-fg:#0E2A26; --btn2-bg:#1D3447; --btn2-fg:#CFF3EE;
+  --band:#13263B; --band-fg:#EEF3F7; --band-muted:#B3C2D0; --chip:#5FD3C5; --chip-fg:#0E2A26;
+  --shadow:0 18px 40px -22px rgba(0,0,0,.6); color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto} *{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:18px;line-height:1.6}
+a{color:var(--teal-ink)}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:6px}
+h1,h2,h3{font-family:var(--font-display);color:var(--heading);line-height:1.15;text-wrap:balance;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:700}
+h3{font-size:1.2rem;font-weight:600;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(16px,4vw,32px)}
+.section{padding-block:clamp(56px,8vw,96px)}
+.section-head{display:grid;gap:14px;max-width:44rem;margin-bottom:40px}
+.eyebrow{font-family:var(--font-display);font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-ink)}
+.lead{font-size:1.15rem;color:var(--muted);max-width:40rem}
+
+/* Botones */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 24px;border-radius:12px;font-family:var(--font-body);font-weight:700;font-size:1.05rem;text-decoration:none;border:0;cursor:pointer;transition:transform .15s ease, filter .15s ease}
+.btn:hover{transform:translateY(-1px);filter:brightness(1.06)}
+.btn-primary{background:var(--btn-bg);color:var(--btn-fg)}
+.btn-soft{background:var(--btn2-bg);color:var(--btn2-fg)}
+.btn svg{flex:none}
+
+/* Encabezado */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--heading)}
+.brand-name{font-family:var(--font-display);font-size:1.25rem;letter-spacing:-.02em}
+.brand-name b{font-weight:700}
+.nav{display:flex;align-items:center;gap:22px}
+.nav a{color:var(--fg);text-decoration:none;font-weight:600;font-size:.98rem}
+.nav a:hover{color:var(--teal-ink)}
+.nav .btn{min-height:42px;padding:9px 16px;font-size:.95rem;color:var(--btn-fg)}
+@media (max-width:860px){.nav a:not(.btn){display:none}}
+
+/* Hero */
+.hero{padding-block:clamp(40px,6vw,80px) clamp(48px,7vw,88px)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,64px);align-items:center}
+@media (max-width:920px){.hero .wrap{grid-template-columns:minmax(0,1fr)}}
+.hero-copy{display:grid;gap:22px;min-width:0}
+.hero h1{display:grid;gap:14px;font-size:clamp(2.1rem,4.6vw,3.35rem);font-weight:700}
+.hero h1 .eyebrow{font-size:.85rem;letter-spacing:.14em}
+.hero .lead{font-size:1.2rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.ticks{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;padding:0;margin:0;color:var(--muted);font-weight:600;font-size:.98rem}
+.ticks li{display:flex;align-items:center;gap:8px}
+.ticks svg{color:var(--teal)}
+
+/* Agenda (motivo de la marca) */
+.agenda{background:var(--surface);border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:20px;display:grid;gap:14px;min-width:0}
+.agenda-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.agenda-title{font-family:var(--font-display);font-weight:600;color:var(--heading);font-size:1rem}
+.agenda-pill{font-size:.8rem;font-weight:700;color:var(--chip-fg);background:var(--chip);border-radius:999px;padding:4px 10px}
+.week{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px}
+.day{display:grid;gap:6px;align-content:start}
+.day-name{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);text-align:center;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.slot{border-radius:8px;padding:6px 7px;font-size:.74rem;line-height:1.25;background:var(--teal-soft);color:var(--fg);border:1px solid color-mix(in srgb,var(--teal) 35%,transparent);animation:pop .5s ease both}
+.slot b{display:block;font-variant-numeric:tabular-nums;color:var(--teal-ink);font-weight:700}
+.slot.new{background:var(--chip);color:var(--chip-fg);border-color:transparent}
+.slot.new b{color:var(--chip-fg)}
+@keyframes pop{from{transform:scale(.92)}to{transform:scale(1)}}
+.toast{display:flex;gap:12px;align-items:center;background:var(--band);color:var(--band-fg);border-radius:14px;padding:12px 14px;font-size:.92rem}
+.toast-ico{flex:none;width:36px;height:36px;border-radius:10px;background:var(--chip);display:grid;place-items:center;color:var(--chip-fg)}
+.toast small{display:block;color:var(--band-muted);font-size:.8rem}
+.agenda-note{font-size:.8rem;color:var(--muted);text-align:center}
+@media (max-width:560px){.week{grid-template-columns:repeat(3,minmax(0,1fr))} .day:nth-child(n+4){display:none}}
+
+/* Problema */
+.problems{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;list-style:none;padding:0;margin:0}
+@media (max-width:720px){.problems{grid-template-columns:minmax(0,1fr)}}
+.problems li{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.problems svg{flex:none;color:var(--teal-ink);margin-top:3px}
+.verdict{margin-top:32px;font-family:var(--font-display);font-size:clamp(1.2rem,2.2vw,1.5rem);font-weight:600;color:var(--heading);max-width:44rem;text-wrap:balance}
+.verdict span{color:var(--teal-ink)}
+
+/* Sistema: 4 pasos en orden */
+.alt{background:var(--surface);border-block:1px solid var(--line)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;list-style:none;padding:0;margin:0;counter-reset:paso}
+@media (max-width:960px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.steps{grid-template-columns:minmax(0,1fr)}}
+.step{display:grid;gap:10px;align-content:start;padding-top:18px;border-top:3px solid var(--teal);counter-increment:paso}
+.step::before{content:"Paso " counter(paso);font-family:var(--font-display);font-size:.8rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-ink)}
+.step p{color:var(--muted);font-size:1rem}
+.numbers{margin-top:40px;display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center;padding:22px 24px;border-radius:16px;background:var(--bg);border:1px solid var(--line)}
+.numbers strong{font-family:var(--font-display);color:var(--heading);font-size:1.15rem}
+.numbers ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.numbers li{font-size:.92rem;font-weight:700;padding:6px 12px;border-radius:999px;background:var(--teal-soft);color:var(--btn2-fg)}
+
+/* Programa 90 días */
+.program{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--surface)}
+@media (max-width:820px){.program{grid-template-columns:minmax(0,1fr)}}
+.phase{padding:26px;display:grid;gap:10px;align-content:start;border-right:1px solid var(--line)}
+.phase:last-child{border-right:0}
+@media (max-width:820px){.phase{border-right:0;border-bottom:1px solid var(--line)} .phase:last-child{border-bottom:0}}
+.phase-when{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;font-family:var(--font-display);font-weight:700;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.phase-when em{font-style:normal;color:var(--chip-fg);background:var(--chip);padding:2px 10px;border-radius:999px;letter-spacing:.04em;text-transform:none;font-size:.8rem;white-space:nowrap}
+.phase ul{margin:0;padding-left:20px;color:var(--muted);font-size:1rem;display:grid;gap:4px}
+
+/* Sobre Héctor */
+.about .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,64px);align-items:center}
+@media (max-width:860px){.about .wrap{grid-template-columns:minmax(0,1fr)}}
+figure{margin:0}
+.portrait{position:relative;max-width:440px;width:100%;justify-self:center}
+.portrait img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px;box-shadow:var(--shadow)}
+.portrait figcaption{position:absolute;left:16px;bottom:16px;right:16px;background:var(--surface);color:var(--fg);border-radius:12px;padding:10px 14px;font-size:.9rem;box-shadow:var(--shadow)}
+.portrait figcaption b{font-family:var(--font-display);color:var(--heading)}
+.about-copy{display:grid;gap:18px;min-width:0}
+.tacos{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;font-family:var(--font-display);color:var(--heading)}
+.tacos .from{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums}
+.tacos .arrow{color:var(--teal-ink);font-size:1.6rem}
+.tacos .to{font-size:clamp(2.4rem,5vw,3.6rem);font-weight:700;font-variant-numeric:tabular-nums;letter-spacing:-.03em}
+.tacos small{flex-basis:100%;font-family:var(--font-body);font-size:1rem;color:var(--muted)}
+.about-copy p{max-width:38rem}
+.about-copy .strong{font-weight:600;color:var(--heading)}
+.creds{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0}
+.creds li{font-size:.88rem;font-weight:600;padding:6px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted)}
+
+/* Fundadores (franja marina) */
+.band{background:var(--band);color:var(--band-fg)}
+.band h2,.band h3{color:#FFFFFF}
+.band .eyebrow{color:var(--teal)}
+.founders .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,56px);align-items:center}
+@media (max-width:860px){.founders .wrap{grid-template-columns:minmax(0,1fr)}}
+.founders p{color:var(--band-muted);font-size:1.1rem;max-width:36rem}
+.founders .copy{display:grid;gap:18px}
+.seats{display:grid;gap:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:24px}
+.seat-row{display:flex;gap:10px}
+.seat{flex:1;aspect-ratio:1/1;max-width:96px;border-radius:14px;border:2px dashed rgba(255,255,255,.35);display:grid;place-items:center;font-family:var(--font-display);font-weight:700;font-size:1.4rem;color:#FFFFFF}
+.seat.first{border-style:solid;border-color:var(--teal);background:rgba(43,179,163,.16)}
+.seats-label{font-size:.95rem;color:var(--band-muted)}
+.seats-label b{color:#FFFFFF}
+.first-note{display:flex;gap:10px;align-items:flex-start;font-size:.98rem;color:var(--band-fg)}
+.first-note svg{flex:none;color:var(--teal);margin-top:3px}
+.band .btn-primary{background:var(--chip);color:var(--chip-fg)}
+
+/* Preguntas */
+.faq{display:grid;gap:12px;max-width:52rem}
+.faq details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:4px 20px}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:16px;font-family:var(--font-display);font-weight:600;color:var(--heading);font-size:1.05rem}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.4rem;color:var(--teal-ink);flex:none;transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq details p{padding-bottom:18px;color:var(--muted)}
+
+/* Diagnóstico */
+.diag .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,5vw,56px);align-items:start}
+@media (max-width:900px){.diag .wrap{grid-template-columns:minmax(0,1fr)}}
+.diag-copy{display:grid;gap:18px}
+.diag-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.diag-list li{display:flex;gap:10px;align-items:flex-start}
+.diag-list svg{flex:none;color:var(--teal);margin-top:4px}
+form.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:clamp(20px,3vw,32px);box-shadow:var(--shadow);display:grid;gap:16px}
+.field{display:grid;gap:6px}
+.field-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:560px){.field-row{grid-template-columns:minmax(0,1fr)}}
+label{font-weight:600;font-size:.95rem}
+label small{font-weight:400;color:var(--muted)}
+input,select,textarea{font:inherit;font-size:1rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;width:100%}
+textarea{min-height:96px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);outline-offset:1px}
+.form-note{font-size:.85rem;color:var(--muted)}
+.form-done{background:var(--teal-soft);border-radius:12px;padding:16px;color:var(--fg)}
+.form-done b{color:var(--heading)}
+
+/* Pie */
+footer{border-top:1px solid var(--line);padding-block:36px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;justify-content:space-between;align-items:center;color:var(--muted);font-size:.95rem}
+footer .tagline{font-family:var(--font-display);color:var(--heading)}
+.wa-float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--chip);color:var(--chip-fg);box-shadow:var(--shadow);text-decoration:none}
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="logo" viewBox="-2 -6 72 70">
+    <rect x="6" y="11" width="52" height="47" rx="10" fill="none" stroke="currentColor" stroke-width="5"/>
+    <line x1="6" y1="25" x2="58" y2="25" stroke="currentColor" stroke-width="5"/>
+    <line x1="20" y1="5" x2="20" y2="16" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    <line x1="44" y1="5" x2="44" y2="16" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+    <polyline points="21,41 29,48 44,33" fill="none" stroke="var(--teal)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M58 -5 L61.1 2.9 L69 6 L61.1 9.1 L58 17 L54.9 9.1 L47 6 L54.9 2.9 Z" fill="var(--teal)" stroke="var(--bg)" stroke-width="3.5" stroke-linejoin="round" paint-order="stroke"/>
+  </symbol>
+  <symbol id="check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="x" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2A9.7 9.7 0 0 0 3.6 16.8L2.3 21.7l5-1.3A9.7 9.7 0 1 0 12 2.2zm0 17.6a7.9 7.9 0 0 1-4-1.1l-.3-.2-3 .8.8-2.9-.2-.3A7.9 7.9 0 1 1 12 19.8zm4.4-5.9c-.2-.1-1.4-.7-1.7-.8-.2-.1-.4-.1-.5.1l-.8.9c-.1.2-.3.2-.5.1a6.5 6.5 0 0 1-3.2-2.8c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.5-.4h-.5a.9.9 0 0 0-.7.3 2.8 2.8 0 0 0-.9 2.1 4.9 4.9 0 0 0 1 2.6 11.2 11.2 0 0 0 4.3 3.8c1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.2.2-.6.2-1 .1-1.2l-.6-.3z"/></symbol>
+  <symbol id="spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2l2.2 5.8L20 10l-5.8 2.2L12 18l-2.2-5.8L4 10l5.8-2.2z"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="BookedCleaners, inicio">
+      <svg width="38" height="37" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand-name"><b>Booked</b>Cleaners</span>
+    </a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#sistema">El sistema</a>
+      <a href="#programa">Programa</a>
+      <a href="#hector">Quién soy</a>
+      <a href="#preguntas">Preguntas</a>
+      <a class="btn btn-primary" href="#diagnostico">Diagnóstico gratis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>
+          <span class="eyebrow">Marketing para empresas de limpieza</span>
+          Usted hace el mejor trabajo de limpieza. Nosotros hacemos que más clientes lo encuentren.
+        </h1>
+        <p class="lead">Ayudamos a empresas de limpieza de dueños latinos en EEUU a conseguir clientes desde Google, sin depender de Thumbtack ni Angi. Todo en español.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#diagnostico">Quiero mi diagnóstico gratis</a>
+          <a class="btn btn-soft" href="#sistema">Ver cómo funciona</a>
+        </div>
+        <ul class="ticks">
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Atención en español</li>
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>100% remoto</li>
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Sin contratos largos</li>
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Primer mes sin costo</li>
+        </ul>
+      </div>
+
+      <figure class="agenda" aria-label="Ejemplo de una agenda semanal llena de servicios de limpieza">
+        <div class="agenda-top">
+          <span class="agenda-title">Agenda de la semana</span>
+          <span class="agenda-pill">Agenda llena</span>
+        </div>
+        <div class="week">
+          <div class="day"><span class="day-name">Lun</span>
+            <span class="slot"><b>9:00</b>Limpieza regular</span>
+            <span class="slot"><b>13:30</b>Quincenal</span></div>
+          <div class="day"><span class="day-name">Mar</span>
+            <span class="slot"><b>8:30</b>Limpieza profunda</span>
+            <span class="slot new"><b>14:00</b>Cliente nuevo</span></div>
+          <div class="day"><span class="day-name">Mié</span>
+            <span class="slot"><b>9:00</b>Move-out</span>
+            <span class="slot"><b>15:00</b>Semanal</span></div>
+          <div class="day"><span class="day-name">Jue</span>
+            <span class="slot"><b>10:00</b>Airbnb</span>
+            <span class="slot"><b>14:30</b>Quincenal</span></div>
+          <div class="day"><span class="day-name">Vie</span>
+            <span class="slot new"><b>9:00</b>Cliente nuevo</span>
+            <span class="slot"><b>13:00</b>Move-in</span></div>
+          <div class="day"><span class="day-name">Sáb</span>
+            <span class="slot"><b>9:30</b>Limpieza profunda</span></div>
+        </div>
+        <div class="toast" role="note">
+          <span class="toast-ico"><svg width="20" height="20" aria-hidden="true"><use href="#spark"/></svg></span>
+          <span>Nueva solicitud de cotización<small>Llegó desde su perfil de Google Maps</small></span>
+        </div>
+        <figcaption class="agenda-note">Ejemplo ilustrativo de una semana con la agenda llena</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="problema-t">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">El problema</span>
+        <h2 id="problema-t">¿Le suena familiar?</h2>
+      </div>
+      <ul class="problems">
+        <li><svg width="22" height="22" aria-hidden="true"><use href="#x"/></svg><span>Paga por clientes en Thumbtack o Angi que al final no contratan.</span></li>
+        <li><svg width="22" height="22" aria-hidden="true"><use href="#x"/></svg><span>Su perfil de Google casi no tiene fotos ni reseñas, y la competencia aparece primero.</span></li>
+        <li><svg width="22" height="22" aria-hidden="true"><use href="#x"/></svg><span>Hace un gran trabajo, pero los clientes nuevos llegan solo de boca en boca.</span></li>
+        <li><svg width="22" height="22" aria-hidden="true"><use href="#x"/></svg><span>Le piden cotización, la manda, y nunca vuelven a contestar.</span></li>
+      </ul>
+      <p class="verdict">No es falta de calidad. <span>Es que su negocio todavía no se ve en internet tan bien como trabaja.</span></p>
+    </div>
+  </section>
+
+  <section class="section alt" id="sistema" aria-labelledby="sistema-t">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">El sistema</span>
+        <h2 id="sistema-t">Un sistema sencillo en 4 pasos</h2>
+        <p class="lead">Primero entendemos su negocio. Después lo hacemos visible en Google y convertimos las visitas en cotizaciones.</p>
+      </div>
+      <ol class="steps">
+        <li class="step"><h3>Diagnóstico digital para su empresa de limpieza</h3><p>Revisamos su negocio como lo haría un auditor: Google, web, reseñas y cómo responde a las cotizaciones. Le entregamos un reporte claro, en español.</p></li>
+        <li class="step"><h3>Google Maps para empresas de limpieza</h3><p>Optimizamos su perfil de Google Business, en inglés, para que aparezca cuando alguien busca limpieza en su zona.</p></li>
+        <li class="step"><h3>Página web que consigue cotizaciones</h3><p>Una página sencilla y rápida, hecha para que el visitante pida su cotización. Si ya tiene web, ordenamos su SEO.</p></li>
+        <li class="step"><h3>Reseñas y seguimiento de clientes</h3><p>Le ayudamos a pedir reseñas a sus clientes y a dar seguimiento a cada cotización, para que no se le escape ninguno.</p></li>
+      </ol>
+      <div class="numbers">
+        <strong>Números, no promesas.</strong>
+        <span>Cada mes le mostramos:</span>
+        <ul><li>Llamadas</li><li>Cotizaciones</li><li>Clientes nuevos</li><li>Reseñas</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="programa" aria-labelledby="programa-t">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Programa Agenda Llena</span>
+        <h2 id="programa-t">90 días para poner su negocio en orden</h2>
+        <p class="lead">Cada negocio es distinto. Por eso el plan se arma después del diagnóstico, con lo que su empresa necesita de verdad.</p>
+      </div>
+      <div class="program">
+        <div class="phase">
+          <span class="phase-when">Mes 1 <em>Sin costo para Fundadores</em></span>
+          <h3>Diagnóstico y primer cambio</h3>
+          <ul><li>Diagnóstico completo</li><li>Plan por escrito</li><li>Optimización de su perfil en Google Maps</li></ul>
+        </div>
+        <div class="phase">
+          <span class="phase-when">Meses 2 y 3</span>
+          <h3>Ejecución del plan</h3>
+          <ul><li>Página web nueva o mejora del SEO de la actual</li><li>Sistema para pedir reseñas</li><li>Seguimiento de cotizaciones</li></ul>
+        </div>
+        <div class="phase">
+          <span class="phase-when">Al cierre del mes 3</span>
+          <h3>Revisión de resultados</h3>
+          <ul><li>Reunión con sus números</li><li>Ajustes para seguir creciendo</li><li>Si funciona, continúa mes a mes</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt about" id="hector" aria-labelledby="hector-t">
+    <div class="wrap">
+      <figure class="portrait">
+        <img src="img/hector.jpg" alt="Héctor Popoca, fundador de BookedCleaners" width="900" height="900">
+        <figcaption><b>Héctor Popoca</b> · Fundador de BookedCleaners</figcaption>
+      </figure>
+      <div class="about-copy">
+        <span class="eyebrow">Quién está detrás</span>
+        <h2 id="hector-t">Hola, soy Héctor</h2>
+        <p class="tacos" aria-label="De 75 a 2,000 tacos diarios">
+          <span class="from">75</span><span class="arrow" aria-hidden="true">→</span><span class="to">2,000</span>
+          <small>tacos diarios, con un equipo de 15 personas</small>
+        </p>
+        <p>Soy hijo de padres comerciantes y crecí entre puestos: dulces, bisutería, cosméticos. Después formalicé mi propio taller de estampado, y más tarde levanté un negocio de producción, venta y distribución de tacos de canasta: empezamos con 75 tacos y llegamos a 2,000 diarios, con un equipo de 15 personas.</p>
+        <p class="strong">Por eso sé lo que usted vive: pagar la nómina, planear el presupuesto y, lo más importante, conseguir clientes.</p>
+        <p>En mi carrera profesional, en el sector público y privado, me he dedicado a analizar información para mejorar procesos operativos y administrativos. Y por más de 20 años he sido docente, en el CIITEC del IPN y en la Secretaría de Educación Pública.</p>
+        <p>Hoy uno todo eso para ayudar a dueños de empresas de limpieza en EEUU a posicionar su negocio. Le hablo en español, le muestro los números y le enseño a manejarlo. No lo dejo dependiendo de mí.</p>
+        <ul class="creds">
+          <li>Administrador Industrial · IPN</li>
+          <li>Maestría en Ambientes Virtuales · UdeG</li>
+          <li>20+ años como docente</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band founders" id="fundadores" aria-labelledby="fundadores-t">
+    <div class="wrap">
+      <div class="copy">
+        <span class="eyebrow">Clientes Fundadores</span>
+        <h2 id="fundadores-t">Buscamos 3 Clientes Fundadores</h2>
+        <p>Estamos abriendo BookedCleaners y queremos empezar con pocos clientes, bien atendidos. El primer mes es sin costo. A cambio, solo le pedimos su opinión honesta y permiso para compartir sus resultados como caso de éxito.</p>
+        <div class="cta-row"><a class="btn btn-primary" href="#diagnostico">Quiero ser Cliente Fundador</a></div>
+      </div>
+      <div class="seats">
+        <div class="seat-row" aria-hidden="true"><span class="seat first">1</span><span class="seat">2</span><span class="seat">3</span></div>
+        <p class="seats-label"><b>3 lugares disponibles</b> · primer mes sin costo</p>
+        <p class="first-note"><svg width="20" height="20" aria-hidden="true"><use href="#spark"/></svg><span>El primer negocio que confíe en nosotros tendrá un precio especial de por vida.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="preguntas" aria-labelledby="preguntas-t">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2 id="preguntas-t">Lo que más nos preguntan</h2>
+      </div>
+      <div class="faq">
+        <details><summary>¿Cuánto cuesta?</summary><p>Depende de lo que su negocio necesite. Después del diagnóstico le entregamos un plan con precio claro, por escrito, antes de empezar. El primer mes es sin costo para Clientes Fundadores, y no hay contratos largos.</p></details>
+        <details><summary>¿Necesito saber de tecnología?</summary><p>No. Nosotros lo hacemos y se lo explicamos en palabras sencillas, paso a paso.</p></details>
+        <details><summary>¿Funciona si mis clientes hablan inglés?</summary><p>Sí, esa es la idea. Usted habla con nosotros en español, y su negocio le habla en inglés a sus clientes: su perfil de Google, su página y sus mensajes.</p></details>
+        <details><summary>¿Ya tengo página web, también me sirve?</summary><p>Sí. En ese caso revisamos su web y ordenamos su SEO para que Google la muestre mejor, en lugar de hacer una nueva.</p></details>
+        <details><summary>¿Trabajan con empresas de cualquier estado?</summary><p>Sí. Trabajamos 100% en línea con empresas de limpieza residencial en todo EEUU.</p></details>
+        <details><summary>¿En cuánto tiempo veo resultados?</summary><p>Los cambios en Google suelen notarse entre 4 y 8 semanas. Cada mes le mostramos el avance con números.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt diag" id="diagnostico" aria-labelledby="diag-t">
+    <div class="wrap">
+      <div class="diag-copy">
+        <span class="eyebrow">Diagnóstico gratis</span>
+        <h2 id="diag-t">¿Listo para tener la agenda llena?</h2>
+        <p class="lead">Cuéntenos de su negocio. Le entregamos su diagnóstico en un máximo de 48 horas hábiles.</p>
+        <ul class="diag-list">
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Cómo se ve su negocio en Google hoy</li>
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Qué está frenando sus llamadas y cotizaciones</li>
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Los 3 cambios con más impacto para empezar</li>
+        </ul>
+      </div>
+      <form class="card" id="diag-form" novalidate>
+        <div class="field-row">
+          <div class="field"><label for="f-nombre">Su nombre</label><input id="f-nombre" name="nombre" autocomplete="name" required placeholder="Ej. Rosa Martínez"></div>
+          <div class="field"><label for="f-negocio">Nombre de su negocio</label><input id="f-negocio" name="negocio" required placeholder="Ej. Sparkle Home Cleaning"></div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label for="f-ciudad">Ciudad y estado</label><input id="f-ciudad" name="ciudad" required placeholder="Ej. Houston, TX"></div>
+          <div class="field"><label for="f-tel">WhatsApp</label><input id="f-tel" name="tel" type="tel" autocomplete="tel" required placeholder="Ej. (713) 555-0142"></div>
+        </div>
+        <div class="field"><label for="f-web">Página web <small>(si tiene)</small></label><input id="f-web" name="web" type="url" placeholder="https://"></div>
+        <div class="field"><label for="f-meta">¿Qué le gustaría mejorar?</label>
+          <select id="f-meta" name="meta">
+            <option>Conseguir más clientes nuevos</option>
+            <option>Aparecer en Google Maps</option>
+            <option>Tener o mejorar mi página web</option>
+            <option>Conseguir más reseñas</option>
+            <option>Dejar de depender de Thumbtack o Angi</option>
+          </select>
+        </div>
+        <div class="field"><label for="f-msg">Algo más que debamos saber <small>(opcional)</small></label><textarea id="f-msg" name="msg" placeholder="Por ejemplo: cuántos empleados tiene o qué servicios ofrece"></textarea></div>
+        <button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
+        <p class="form-note">Al enviar se abre WhatsApp con sus datos listos. Le respondemos en español.</p>
+        <div class="form-done" id="form-done" hidden role="status"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="BookedCleaners, inicio">
+      <svg width="30" height="29" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand-name"><b>Booked</b>Cleaners</span>
+    </a>
+    <span class="tagline">Your cleaning business, fully booked.</span>
+    <span>Servicio 100% remoto · Atención en español · Lunes a viernes</span>
+  </div>
+</footer>
+
+<a class="wa-float" href="#diagnostico" id="wa-float" aria-label="Escríbanos por WhatsApp">
+  <svg width="30" height="30" aria-hidden="true"><use href="#wa"/></svg>
+</a>
+
+<script>
+/* Número de WhatsApp Business con código de país, solo dígitos. Ej: "17135550142". Vacío = aún no configurado. */
+const WHATSAPP = "";
+
+(function(){
+  const form = document.getElementById('diag-form');
+  const done = document.getElementById('form-done');
+  const float = document.getElementById('wa-float');
+  if (WHATSAPP) {
+    float.href = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent('Hola, me interesa el diagnóstico gratis de BookedCleaners.');
+    float.target = '_blank'; float.rel = 'noopener';
+  }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    const req = ['f-nombre','f-negocio','f-ciudad','f-tel'];
+    let first = null;
+    req.forEach(function(id){
+      const el = document.getElementById(id);
+      const bad = !el.value.trim();
+      el.setAttribute('aria-invalid', bad ? 'true' : 'false');
+      el.style.borderColor = bad ? 'var(--teal-ink)' : '';
+      if (bad && !first) first = el;
+    });
+    if (first) {
+      done.hidden = false;
+      done.innerHTML = '<b>Faltan datos.</b> Complete su nombre, negocio, ciudad y WhatsApp para enviar la solicitud.';
+      first.focus();
+      return;
+    }
+    const v = function(id){ return document.getElementById(id).value.trim(); };
+    const text = 'Hola, quiero mi diagnóstico gratis de BookedCleaners.\n' +
+      'Nombre: ' + v('f-nombre') + '\nNegocio: ' + v('f-negocio') + '\nCiudad: ' + v('f-ciudad') +
+      '\nWhatsApp: ' + v('f-tel') + (v('f-web') ? '\nWeb: ' + v('f-web') : '') +
+      '\nQuiero: ' + v('f-meta') + (v('f-msg') ? '\nNota: ' + v('f-msg') : '');
+    done.hidden = false;
+    if (WHATSAPP) {
+      const url = 'https://wa.me/' + WHATSAPP + '?text=' + encodeURIComponent(text);
+      done.innerHTML = '<b>Listo, ' + v('f-nombre').replace(/[<>&]/g,'') + '.</b> Si WhatsApp no se abrió, <a href="' + url + '" target="_blank" rel="noopener">toque aquí para enviar su solicitud</a>.';
+      const a = document.createElement('a'); a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.click();
+    } else {
+      done.innerHTML = '<b>Vista previa del formulario.</b> El número de WhatsApp todavía no está configurado, así que la solicitud no se envió.';
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
