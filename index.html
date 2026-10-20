@@ -85,6 +85,7 @@ p{margin:0}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
 .ticks{display:flex;flex-wrap:wrap;gap:8px 18px;list-style:none;padding:0;margin:0;color:var(--muted);font-weight:600;font-size:.98rem}
 .ticks li{display:flex;align-items:center;gap:8px}
+.hook{font-family:var(--font-display);font-weight:600;font-size:1.15rem;color:var(--heading);padding:12px 16px;border-radius:12px;background:var(--teal-soft);justify-self:start}
 .ticks svg{color:var(--teal)}
 
 /* Agenda (motivo de la marca) */
@@ -138,14 +139,12 @@ p{margin:0}
 .phase ul{margin:0;padding-left:20px;color:var(--muted);font-size:1rem;display:grid;gap:4px}
 
 /* Sobre Héctor */
-.about .wrap{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,64px);align-items:center}
-@media (max-width:860px){.about .wrap{grid-template-columns:minmax(0,1fr)}}
 figure{margin:0}
-.portrait{position:relative;max-width:440px;width:100%;justify-self:center}
-.portrait img{display:block;width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:20px;box-shadow:var(--shadow)}
-.portrait figcaption{position:absolute;left:16px;bottom:16px;right:16px;background:var(--surface);color:var(--fg);border-radius:12px;padding:10px 14px;font-size:.9rem;box-shadow:var(--shadow)}
-.portrait figcaption b{font-family:var(--font-display);color:var(--heading)}
-.about-copy{display:grid;gap:18px;min-width:0}
+.about-copy{display:grid;gap:18px;min-width:0;max-width:46rem}
+.who{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.who img{width:96px;height:96px;border-radius:50%;object-fit:cover;flex:none;border:3px solid var(--surface);box-shadow:0 0 0 2px var(--teal)}
+.who-text{display:grid;gap:4px}
+.who-text small{color:var(--muted);font-size:.95rem}
 .tacos{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px;font-family:var(--font-display);color:var(--heading)}
 .tacos .from{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:400;color:var(--muted);font-variant-numeric:tabular-nums}
 .tacos .arrow{color:var(--teal-ink);font-size:1.6rem}
@@ -253,6 +252,7 @@ footer .tagline{font-family:var(--font-display);color:var(--heading)}
           Usted hace el mejor trabajo de limpieza. Nosotros hacemos que más clientes lo encuentren.
         </h1>
         <p class="lead">Ayudamos a empresas de limpieza de dueños latinos en EEUU a conseguir clientes desde Google, sin depender de Thumbtack ni Angi. Todo en español.</p>
+        <p class="hook">Su negocio listo para recibir clientes de Google en 28 días.</p>
         <div class="cta-row">
           <a class="btn btn-primary" href="#diagnostico">Quiero mi diagnóstico gratis</a>
           <a class="btn btn-soft" href="#sistema">Ver cómo funciona</a>
@@ -261,7 +261,7 @@ footer .tagline{font-family:var(--font-display);color:var(--heading)}
           <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Atención en español</li>
           <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>100% remoto</li>
           <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Sin contratos largos</li>
-          <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Primer mes sin costo</li>
+          <li><svg width="18" height="18" aria-hidden="true"><use href="#check"/></svg>Se paga mes a mes</li>
         </ul>
       </div>
 
@@ -339,24 +339,24 @@ footer .tagline{font-family:var(--font-display);color:var(--heading)}
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Programa Agenda Llena</span>
-        <h2 id="programa-t">90 días para poner su negocio en orden</h2>
-        <p class="lead">Cada negocio es distinto. Por eso el plan se arma después del diagnóstico, con lo que su empresa necesita de verdad.</p>
+        <h2 id="programa-t">Un tratamiento de 3 meses para su negocio</h2>
+        <p class="lead">Como con un buen médico: primero el diagnóstico, después el tratamiento. Puede contratar solo los primeros 28 días, pero recomendamos 3 meses para que las ventas despeguen.</p>
       </div>
       <div class="program">
         <div class="phase">
-          <span class="phase-when">Mes 1 <em>Sin costo para Fundadores</em></span>
-          <h3>Diagnóstico y primer cambio</h3>
-          <ul><li>Diagnóstico completo</li><li>Plan por escrito</li><li>Optimización de su perfil en Google Maps</li></ul>
+          <span class="phase-when">Primeros 28 días <em>Se puede contratar solo</em></span>
+          <h3>Arranque: su negocio en orden</h3>
+          <ul><li>Diagnóstico completo y plan por escrito</li><li>Perfil de Google Maps optimizado</li><li>Página web nueva o SEO de la actual en orden</li><li>Sistema para pedir reseñas</li></ul>
         </div>
         <div class="phase">
-          <span class="phase-when">Meses 2 y 3</span>
-          <h3>Ejecución del plan</h3>
-          <ul><li>Página web nueva o mejora del SEO de la actual</li><li>Sistema para pedir reseñas</li><li>Seguimiento de cotizaciones</li></ul>
+          <span class="phase-when">Meses 2 y 3 <em>Recomendado</em></span>
+          <h3>Tratamiento: llegan los resultados</h3>
+          <ul><li>Seguimiento de cotizaciones</li><li>Ajustes según lo que muestran los números</li><li>Reporte mensual: llamadas, cotizaciones y clientes</li></ul>
         </div>
         <div class="phase">
-          <span class="phase-when">Al cierre del mes 3</span>
-          <h3>Revisión de resultados</h3>
-          <ul><li>Reunión con sus números</li><li>Ajustes para seguir creciendo</li><li>Si funciona, continúa mes a mes</li></ul>
+          <span class="phase-when">Después del mes 3</span>
+          <h3>Alta o Fase 2</h3>
+          <ul><li>Si su negocio ya camina solo, le damos de alta</li><li>O seguimos 3 meses más con correos a sus clientes, campañas en redes y anuncios con estrategia</li></ul>
         </div>
       </div>
     </div>
@@ -364,26 +364,22 @@ footer .tagline{font-family:var(--font-display);color:var(--heading)}
 
   <section class="section alt about" id="hector" aria-labelledby="hector-t">
     <div class="wrap">
-      <figure class="portrait">
-        <img src="img/hector.jpg" alt="Héctor Popoca, fundador de BookedCleaners" width="900" height="900">
-        <figcaption><b>Héctor Popoca</b> · Fundador de BookedCleaners</figcaption>
-      </figure>
       <div class="about-copy">
         <span class="eyebrow">Quién está detrás</span>
-        <h2 id="hector-t">Hola, soy Héctor</h2>
+        <div class="who">
+          <img src="img/hector-perfil.jpg" alt="Héctor Popoca" width="96" height="96">
+          <div class="who-text">
+            <h2 id="hector-t">Hola, soy Héctor</h2>
+            <small>Fundador de BookedCleaners</small>
+          </div>
+        </div>
         <p class="tacos" aria-label="De 75 a 2,000 tacos diarios">
           <span class="from">75</span><span class="arrow" aria-hidden="true">→</span><span class="to">2,000</span>
-          <small>tacos diarios, con un equipo de 15 personas</small>
+          <small>tacos diarios vendidos en mi propio negocio local</small>
         </p>
-        <p>Soy hijo de padres comerciantes y crecí entre puestos: dulces, bisutería, cosméticos. Después formalicé mi propio taller de estampado, y más tarde levanté un negocio de producción, venta y distribución de tacos de canasta: empezamos con 75 tacos y llegamos a 2,000 diarios, con un equipo de 15 personas.</p>
-        <p class="strong">Por eso sé lo que usted vive: pagar la nómina, planear el presupuesto y, lo más importante, conseguir clientes.</p>
-        <p>En mi carrera profesional, en el sector público y privado, me he dedicado a analizar información para mejorar procesos operativos y administrativos. Y por más de 20 años he sido docente, en el CIITEC del IPN y en la Secretaría de Educación Pública.</p>
-        <p>Hoy uno todo eso para ayudar a dueños de empresas de limpieza en EEUU a posicionar su negocio. Le hablo en español, le muestro los números y le enseño a manejarlo. No lo dejo dependiendo de mí.</p>
-        <ul class="creds">
-          <li>Administrador Industrial · IPN</li>
-          <li>Maestría en Ambientes Virtuales · UdeG</li>
-          <li>20+ años como docente</li>
-        </ul>
+        <p>Vengo de una familia de comerciantes y toda mi vida he hecho crecer negocios locales. El más grande, un negocio de tacos de canasta que pasó de vender 75 a 2,000 tacos diarios, con un equipo de 15 personas.</p>
+        <p class="strong">Sé lo que vive un dueño: pagar la nómina, cuidar cada peso y, sobre todo, conseguir clientes.</p>
+        <p>Hoy llevo esa experiencia al mundo digital, para ayudar a negocios locales y familiares a crecer todavía más. Empiezo por las empresas de limpieza de dueños latinos en EEUU: le hablo en español, le muestro los números y le enseño a manejarlo.</p>
       </div>
     </div>
   </section>
@@ -393,12 +389,12 @@ footer .tagline{font-family:var(--font-display);color:var(--heading)}
       <div class="copy">
         <span class="eyebrow">Clientes Fundadores</span>
         <h2 id="fundadores-t">Buscamos 3 Clientes Fundadores</h2>
-        <p>Estamos abriendo BookedCleaners y queremos empezar con pocos clientes, bien atendidos. El primer mes es sin costo. A cambio, solo le pedimos su opinión honesta y permiso para compartir sus resultados como caso de éxito.</p>
+        <p>Estamos abriendo BookedCleaners y queremos empezar con pocos clientes, bien atendidos. Por eso nuestros 3 Clientes Fundadores pagan cada mes al terminar el trabajo, cuando ya lo vieron hecho. A cambio, solo les pedimos su opinión honesta y permiso para compartir sus resultados como caso de éxito.</p>
         <div class="cta-row"><a class="btn btn-primary" href="#diagnostico">Quiero ser Cliente Fundador</a></div>
       </div>
       <div class="seats">
         <div class="seat-row" aria-hidden="true"><span class="seat first">1</span><span class="seat">2</span><span class="seat">3</span></div>
-        <p class="seats-label"><b>3 lugares disponibles</b> · primer mes sin costo</p>
+        <p class="seats-label"><b>3 lugares disponibles</b> · pagan al terminar cada mes</p>
         <p class="first-note"><svg width="20" height="20" aria-hidden="true"><use href="#spark"/></svg><span>El primer negocio que confíe en nosotros tendrá un precio especial de por vida.</span></p>
       </div>
     </div>
@@ -411,12 +407,14 @@ footer .tagline{font-family:var(--font-display);color:var(--heading)}
         <h2 id="preguntas-t">Lo que más nos preguntan</h2>
       </div>
       <div class="faq">
-        <details><summary>¿Cuánto cuesta?</summary><p>Depende de lo que su negocio necesite. Después del diagnóstico le entregamos un plan con precio claro, por escrito, antes de empezar. El primer mes es sin costo para Clientes Fundadores, y no hay contratos largos.</p></details>
+        <details><summary>¿Cuánto cuesta?</summary><p>Depende de lo que su negocio necesite. Después del diagnóstico le entregamos un plan con precio claro, por escrito, antes de empezar. Se paga mes a mes, sin contratos largos.</p></details>
+        <details><summary>¿Cómo se paga?</summary><p>Cada mes se paga 50% al empezar y 50% al entregar el trabajo. Nuestros 3 Clientes Fundadores pagan todo al terminar el mes.</p></details>
+        <details><summary>¿Tengo que contratar los 3 meses?</summary><p>No. Puede contratar solo los primeros 28 días. Recomendamos 3 meses porque es el tiempo que su negocio necesita para que los cambios se conviertan en ventas.</p></details>
         <details><summary>¿Necesito saber de tecnología?</summary><p>No. Nosotros lo hacemos y se lo explicamos en palabras sencillas, paso a paso.</p></details>
         <details><summary>¿Funciona si mis clientes hablan inglés?</summary><p>Sí, esa es la idea. Usted habla con nosotros en español, y su negocio le habla en inglés a sus clientes: su perfil de Google, su página y sus mensajes.</p></details>
         <details><summary>¿Ya tengo página web, también me sirve?</summary><p>Sí. En ese caso revisamos su web y ordenamos su SEO para que Google la muestre mejor, en lugar de hacer una nueva.</p></details>
         <details><summary>¿Trabajan con empresas de cualquier estado?</summary><p>Sí. Trabajamos 100% en línea con empresas de limpieza residencial en todo EEUU.</p></details>
-        <details><summary>¿En cuánto tiempo veo resultados?</summary><p>Los cambios en Google suelen notarse entre 4 y 8 semanas. Cada mes le mostramos el avance con números.</p></details>
+        <details><summary>¿En cuánto tiempo veo resultados?</summary><p>Google suele tardar de 1 a 2 meses en reflejar los cambios. Por eso en el primer mes dejamos su negocio en posición; los resultados llegan en el segundo y se consolidan en el tercero. Cada mes le mostramos el avance con números.</p></details>
       </div>
     </div>
   </section>
@@ -454,7 +452,7 @@ footer .tagline{font-family:var(--font-display);color:var(--heading)}
         </div>
         <div class="field"><label for="f-msg">Algo más que debamos saber <small>(opcional)</small></label><textarea id="f-msg" name="msg" placeholder="Por ejemplo: cuántos empleados tiene o qué servicios ofrece"></textarea></div>
         <button class="btn btn-primary" type="submit">Enviar por WhatsApp</button>
-        <p class="form-note">Al enviar se abre WhatsApp con sus datos listos. Le respondemos en español.</p>
+        <p class="form-note">Al enviar se abre WhatsApp con sus datos listos. Le respondemos en español, de lunes a viernes de 9:00 a 15:00 (hora del Este).</p>
         <div class="form-done" id="form-done" hidden role="status"></div>
       </form>
     </div>
@@ -468,7 +466,7 @@ footer .tagline{font-family:var(--font-display);color:var(--heading)}
       <span class="brand-name"><b>Booked</b>Cleaners</span>
     </a>
     <span class="tagline">Your cleaning business, fully booked.</span>
-    <span>Servicio 100% remoto · Atención en español · Lunes a viernes</span>
+    <span>Servicio 100% remoto · Atención en español · Lunes a viernes, 9:00 a 15:00 (hora del Este)</span>
   </div>
 </footer>
 
